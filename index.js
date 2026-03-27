@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
 
+// cực quan trọng: listen đúng 0.0.0.0
+const PORT = process.env.PORT || 8080;
+
 app.get("/", (req, res) => {
-  res.send("Web Shopee Affiliate đang chạy OK 🚀");
+  res.send("OK LUÔN RỒI NHA 🚀");
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log("Server chạy tại port " + PORT);
 });

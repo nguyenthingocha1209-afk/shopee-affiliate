@@ -1,5 +1,6 @@
 const express = require("express");
-const app = express;
+const app = express();
+
 const affiliateLink = "https://s.shopee.vn/AUpb4ZviyZ";
 
 app.get("/", (req, res) => {
@@ -7,6 +8,7 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
   console.log("Server chạy tại port " + PORT);
 });

@@ -1,12 +1,12 @@
 const express = require("express");
 const app = express();
 
-const affiliateLink = "https://s.shopee.vn/6VJSQfdli8; // link của bạn
+const affiliateLink = "https://s.shopee.vn/6VJSQfdli8"; // link indomie của bạn
 
-// 👉 HIỂN THỊ WEB
+// hiển thị web
 app.use(express.static("public"));
 
-// 👉 NÚT MUA MỚI CHUYỂN LINK
+// nút mua
 app.get("/go", (req, res) => {
   res.redirect(affiliateLink);
 });

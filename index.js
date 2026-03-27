@@ -1,7 +1,5 @@
 const express = require("express");
 const app = express;
-
-// 👉 DÁN LINK AFFILIATE VÀO ĐÂY
 const affiliateLink = "https://s.shopee.vn/AUpb4ZviyZ";
 
 app.get("/", (req, res) => {

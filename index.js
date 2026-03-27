@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const affiliateLink = "https://s.shopee.vn/xxxxx"; // link của bạn
+const affiliateLink = "https://s.shopee.vn/6VJSQfdli8; // link của bạn
 
 // 👉 HIỂN THỊ WEB
 app.use(express.static("public"));

@@ -1,113 +1,98 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Mì trộn Indomie</title>
+  <meta charset="UTF-8">
+  <title>Mì trộn Indomie</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #fff7f0;
+      text-align: center;
+    }
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #f5f5f5;
-}
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
 
-.header {
-  background: #ee4d2d;
-  color: white;
-  padding: 12px;
-  font-weight: bold;
-}
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff5722;
+    }
 
-.container {
-  max-width: 420px;
-  margin: auto;
-  background: white;
-}
+    .img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
 
-.img {
-  width: 100%;
-}
+    .price {
+      font-size: 20px;
+      color: red;
+      font-weight: bold;
+    }
 
-.info {
-  padding: 15px;
-}
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-top: 15px;
+      background: #ff5722;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-.title {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
+    .btn:hover {
+      background: #e64a19;
+    }
 
-.price-old {
-  text-decoration: line-through;
-  color: gray;
-}
+    .box {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-.price-new {
-  color: #ee4d2d;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.tag {
-  background: #ee4d2d;
-  color: white;
-  padding: 3px 6px;
-  font-size: 12px;
-  border-radius: 4px;
-}
-
-.btn {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  max-width: 420px;
-  background: #ee4d2d;
-  color: white;
-  padding: 15px;
-  font-size: 18px;
-  border: none;
-}
-
-.box {
-  padding: 15px;
-  background: #fff;
-  margin-top: 10px;
-}
-</style>
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="header">Shopee</div>
 
 <div class="container">
 
-<img class="img" src="https://cf.shopee.vn/file/6c5c6d3b7f4f0d3fcb0c8c91b2b1b4f5">
+  <div class="title">🔥 Mì trộn Indomie siêu hot</div>
 
-<div class="info">
-  <span class="tag">Yêu thích</span>
-  <div class="title">Mì trộn Indomie cay siêu ngon ăn là ghiền</div>
+  <img class="img" src="https://cf.shopee.vn/file/6c5c6d3b7f4f0d3fcb0c8c91b2b1b4f5">
 
-  <div class="price-old">59.000đ</div>
-  <div class="price-new">35.000đ</div>
-</div>
+  <div class="price">Chỉ từ 35.000đ</div>
+  <p>🍜 Ngon - cay nhẹ - ăn là ghiền</p>
+  <p>🎁 Hoàn 5% xu khi mua qua link</p>
 
-<div class="box">
-  🎁 Hoàn 5% xu khi mua qua link  
-</div>
+  <a href="/go">
+    <button class="btn">👉 MUA NGAY</button>
+  </a>
 
-<div class="box">
-  💰 Nhập thông tin nhận hoàn tiền  
-  <br><br>
-  <input placeholder="SĐT"><br><br>
-  <input placeholder="Mã đơn"><br><br>
-</div>
+  <div class="box">
+    <h3>💰 Nhận hoàn tiền</h3>
+    <input placeholder="Nhập SĐT"><br>
+    <input placeholder="Mã đơn hàng"><br>
+    <button class="btn">Gửi thông tin</button>
+  </div>
 
 </div>
-
-<a href="/go">
-  <button class="btn">Mua ngay</button>
-</a>
 
 </body>
 </html>
